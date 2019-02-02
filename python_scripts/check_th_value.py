@@ -23,7 +23,7 @@ def get_th_hsv(img_blur,h1,s1,v1,h2,s2,v2):
 
 # ----ADAPTIVE THRESHOLD----
 def get_th_ad(img_gray, Block_Size, C):
-    th = cv2.adaptiveThreshold(img_gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, Block_Size, C) #
+    th = cv2.adaptiveThreshold(img_gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, Block_Size, C)
     return th
 
 # ----SYNTHESIS THRESHOLD----
